@@ -5,20 +5,39 @@
 Please fill in the blank
 ```cplus
 /*
-* Name:
+* Name: Gabriel Monagas
 */
 
 // Question: Create a C++ class representing a car with attributes like model, year, and color. Include a method to display car details.
-// Answer: --------------------------------------- here
+// Answer:
 
 #include <iostream>
 #include <string>
 
 class Car {
-public:
+private:
     std::string model;
     int year;
-
+    str color;
+public:
+    str get_model() {
+        return model;
+}
+    int get_year() {
+        return year;
+}
+    str get_color() {
+        return color;
+}
+    void set_model (str m) {
+        model = m;
+}
+    void set_year (int y) {
+        year = y;
+}
+    void set_color (str c) {
+        color = c;
+}    
 
     void displayDetails() {
         std::cout << "Model: " << model << ", Year: " << year << ", Color: " << color << std::endl;
